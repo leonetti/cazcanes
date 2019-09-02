@@ -32,10 +32,11 @@ const Newsletter = () => (
           data-netlify-honeypot="bot-field"
           className={contactStyles.form}
         >
+          <input type="hidden" name="form-name" value="newsletter" />
           <p className={contactStyles.hidden}>
             <label>
               Don’t fill this out if you&#39;re human:
-              <input name="bot-field" />
+              <input type="hidden" name="bot-field" />
             </label>
           </p>
           <div className={contactStyles.form__row}>

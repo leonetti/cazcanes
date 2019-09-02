@@ -33,6 +33,13 @@ const NewsletterBanner = ({ setNewsletter }) => (
         global.window.localStorage.setItem('viewedNewsletterBanner', 'true');
       }}
     >
+      <input type="hidden" name="form-name" value="newsletter" />
+      <p className={newsletterBannerStyles.hidden}>
+        <label>
+              Don’t fill this out if you&#39;re human:
+          <input type="hidden" name="bot-field" />
+        </label>
+      </p>
       <input className={newsletterBannerStyles.email} name="email" placeholder="email@email.com" type="email" required />
       <button
         className={newsletterBannerStyles.submit}
