@@ -1,0 +1,13 @@
+.header {
+  padding: 1rem;
+  background: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  z-index: 1000;
+  user-select: none;
+}
+
+.headerScrolled {
+  border-bottom: 1px solid #cccccc;
+}

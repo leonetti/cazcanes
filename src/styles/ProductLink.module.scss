@@ -1,0 +1,26 @@
+.product__link {
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  transition: color .2s ease;
+  display: block;
+  width: 350px;
+
+  @media screen and (max-width: 1085px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 935px) {
+    width: 250px;
+  }
+}
+
+.product__link:hover {
+  color: #ff863c;
+}
+
+.product__title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

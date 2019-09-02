@@ -1,0 +1,24 @@
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  // subtract footer px
+  min-height: calc(100vh - 88px);
+}
+
+.content {
+  padding-top: 60px;
+  flex-grow: 1;
+}
+
+.no__scroll {
+  overflow: hidden;
+  // 88px for footer
+  height: calc(100vh - 88px);
+
+  @media screen and (min-width: 801px) {
+    height: 100%;
+    overflow: auto;
+  }
+}

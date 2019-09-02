@@ -1,0 +1,23 @@
+
+.social__link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000;
+  width: 200px;
+  margin: 0 auto 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__link span {
+  margin-right: 10px;
+}
+
+.social__link p {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.social__link:hover {
+  color: #ff863c;
+}

@@ -1,0 +1,274 @@
+.hero__image-background {
+  overflow: auto;
+  width: calc(100% + 2rem);
+  height: 500px;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  border-bottom: 3px solid #FFFFFF;
+
+  @media screen and (max-width: 600px) {
+    height: 300px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: calc(100% + 1rem);
+  }
+}
+
+.hero__image-overlay .hero__image-background {
+  width: calc(100% + 1rem);
+}
+
+.hero__image-overlay,
+.hero__altimage-overlay {
+  width: calc(100% + 2rem);
+  height: 500px;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  @media screen and (max-width: 600px) {
+    height: 300px;
+    background-color: transparent;
+  }
+}
+
+.hero__altimage-overlay {
+  background-color: rgba(255, 240, 210, 0.7);
+
+  @media screen and (max-width: 600px) {
+    background-color: transparent;
+  }
+}
+
+.hero__fade-left {
+  background: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(90deg, rgba(255,255,255,0.70) 25%, rgba(255,255,255,0) 100%);
+
+  @media screen and (max-width: 600px) {
+    background: transparent;
+  }
+}
+
+.hero__fade-right {
+  background: rgb(255,255,255);
+  background: linear-gradient(270deg, rgba(255,255,255,0.70) 0%, rgba(255,255,255,0) 100%);
+
+  @media screen and (max-width: 600px) {
+    background: transparent;
+  }
+}
+
+
+
+.hero__image-overlay.hero__inverted {
+  background-color: rgba(0, 0, 0, 0.7);
+
+  @media screen and (max-width: 600px) {
+    background-color: transparent;
+  }
+}
+
+.hero__image-overlay.hero__inverted.hero__fade-right {
+  background: rgb(0,0,0);
+  background: linear-gradient(270deg, rgba(0,0,0,0.70) 25%, rgba(0,0,0,0) 100%);
+
+  @media screen and (max-width: 600px) {
+    background: transparent;
+  }
+}
+
+.hero__image-overlay.hero__inverted.hero__fade-left {
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0.70) 25%, rgba(0,0,0,0) 100%);
+
+  @media screen and (max-width: 600px) {
+    background: transparent;
+  }
+}
+
+.hero__image-text {
+  font-family: 'Open Sans', 'sans-serif';
+  width: 450px;
+  letter-spacing: 0.6px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 3rem;
+  padding: 1rem 0;
+
+  @media screen and (max-width: 600px) {
+    width: auto;
+    font-size: 14px;
+    margin: 0 1rem;
+  }
+}
+
+.hero__altimage-text {
+  width: 750px;
+  letter-spacing: 0.6px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 1rem 0;
+
+  @media screen and (max-width: 800px) {
+    width: calc(100% - 4rem);
+    font-size: 14px;
+  }
+}
+
+.hero__fade-right .hero__image-text {
+  clear: both;
+  text-align: right;
+  float: right;
+  margin-right: 2rem;
+}
+
+.hero__inverted .hero__image-text {
+  color: #ffffff;
+}
+
+.hero__content-inline {
+  display: block;
+  max-width: 80rem;
+  margin: 0 auto;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+
+.hero__content-outer {
+  display: none;
+  margin-bottom: 3rem;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
+}
+
+
+.quote {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-style: italic;
+  width: 750px;
+  margin: 1rem auto 0;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+
+  @media screen and (max-width: 800px) {
+    font-size: 1.5rem;
+    width: 490px;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 0.9rem;
+    width: 325px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem;
+    width: 283px;
+  }
+}
+
+.quote:before {
+  font-family: 'Georgia', serif;
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+
+  @media screen and (max-width: 600px) {
+    font-size: 40px;
+    top: 0;
+    left: 0;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 20px;
+    top: 0;
+    left: 20px;
+  }
+}
+
+.quote:after {
+  font-family: Georgia, serif;
+  content: "\201D";
+  display: block;
+  padding-left: 10px;
+  font-size: 80px;
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  color: #7a7a7a;
+
+  @media screen and (max-width: 600px) {
+    font-size: 40px;
+    top: 0;
+    right: 10px;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 20px;
+    top: 0;
+    right: 30px;
+  }
+}
+
+.quote cite {
+  color: #5f5f5f;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+.quote cite:before {
+  content: "\2014 \2009";
+}
+
+.hero__inverted .quote,
+.hero__inverted .quote:before,
+.hero__inverted .quote:after,
+.hero__inverted .quote cite {
+  color: #ffffff;
+}
+
+.title {
+  font-size: 2.4rem;
+  margin: 3rem 2rem 0;
+  padding: 1rem 0 1rem 1rem;
+  max-width: 750px;
+  font-family: 'Open Sans', 'sans-serif';
+  font-weight: 900;
+  opacity: 0.7;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.hero__fade-right .title {
+  float: right;
+  width: 100%;
+  text-align: right;
+}
+
+.hero__inverted .title {
+  color: #ffffff;
+}
+
+.hero__content-outer .title {
+  margin-top: 1rem;
+}
