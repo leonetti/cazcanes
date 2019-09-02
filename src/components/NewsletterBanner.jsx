@@ -26,7 +26,6 @@ const NewsletterBanner = ({ setNewsletter }) => (
     <form
       name="newsletter"
       method="post"
-      action=""
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className={newsletterBannerStyles.form}

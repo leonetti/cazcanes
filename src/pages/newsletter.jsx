@@ -28,18 +28,23 @@ const Newsletter = () => (
         <form
           name="newsletter"
           method="post"
-          action=""
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           className={contactStyles.form}
         >
+          <p className={contactStyles.hidden}>
+            <label>
+              Don’t fill this out if you&#39;re human:
+              <input name="bot-field" />
+            </label>
+          </p>
           <div className={contactStyles.form__row}>
             <input className={contactStyles.text__input} name="email" placeholder="name@name.com" type="email" required />
             <button
               className={contactStyles.submit}
               type="submit"
             >
-        Sign Up
+            Sign Up
             </button>
           </div>
         </form>
