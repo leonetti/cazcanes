@@ -10,19 +10,19 @@ const Toolbar = ({ title, setSideDrawerOpen }) => (
         <Link className={toolbarStyles.title} to="/" onClick={() => setSideDrawerOpen(false)}>{title}</Link>
       </li>
       <li>
-        <Link className={toolbarStyles.nav__link} to="/products" activeClassName={toolbarStyles.nav__linkActive}>Products</Link>
+        <Link className={toolbarStyles.nav__link} to="/products/" activeClassName={toolbarStyles.nav__linkActive}>Products</Link>
       </li>
       <li>
-        <Link className={toolbarStyles.nav__link} to="/about" activeClassName={toolbarStyles.nav__linkActive}>About</Link>
+        <Link className={toolbarStyles.nav__link} to="/about/" activeClassName={toolbarStyles.nav__linkActive}>About</Link>
       </li>
       <li>
-        <Link className={toolbarStyles.nav__link} to="/blog" activeClassName={toolbarStyles.nav__linkActive}>Blog</Link>
+        <Link className={toolbarStyles.nav__link} to="/blog/" activeClassName={toolbarStyles.nav__linkActive}>Blog</Link>
       </li>
       <li>
-        <Link className={toolbarStyles.nav__link} to="/buy" activeClassName={toolbarStyles.nav__linkActive}>Buy</Link>
+        <Link className={toolbarStyles.nav__link} to="/buy/" activeClassName={toolbarStyles.nav__linkActive}>Buy</Link>
       </li>
       <li>
-        <Link className={toolbarStyles.nav__link} to="/contact" activeClassName={toolbarStyles.nav__linkActive}>Contact</Link>
+        <Link className={toolbarStyles.nav__link} to="/contact/" activeClassName={toolbarStyles.nav__linkActive}>Contact</Link>
       </li>
     </ul>
   </nav>

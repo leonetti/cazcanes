@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <footer className={footerStyles.footer}>
       <p className={footerStyles.copyright}>{`${data.site.siteMetadata.company}, Copyright © 2019`}</p>
-      <Link className={footerStyles.newsletter} to="/newsletter">Subscribe to newsletter</Link>
+      <Link className={footerStyles.newsletter} to="/newsletter/">Subscribe to newsletter</Link>
       <div>
         <a className={footerStyles.social} href={data.site.siteMetadata.facebook} target="_blank" rel="noopener noreferrer">Facebook</a>
         <span>•</span>

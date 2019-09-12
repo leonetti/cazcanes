@@ -59,7 +59,7 @@ const Header = ({ sideDrawerOpen, setSideDrawerOpen }) => {
               [toolbarStyles.nav__linkShow]: true,
               [toolbarStyles.nav__linkHidden]: sideDrawerOpen,
             })}
-            to="/products"
+            to="/products/"
             activeClassName={toolbarStyles.nav__linkActive}
           >
             Products

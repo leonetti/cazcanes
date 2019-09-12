@@ -27,25 +27,25 @@ const SideDrawer = ({ sideDrawerOpen, setSideDrawerOpen }) => {
       <div className={sideDrawerStyles.scrollable__container}>
         <ul className={sideDrawerStyles.nav__list}>
           <li>
-            <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/products" activeClassName={sideDrawerStyles.nav__linkActive}>Products</Link>
+            <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/products/" activeClassName={sideDrawerStyles.nav__linkActive}>Products</Link>
           </li>
           <li>
-            <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/about" activeClassName={sideDrawerStyles.nav__linkActive}>About</Link>
+            <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/about/" activeClassName={sideDrawerStyles.nav__linkActive}>About</Link>
           </li>
           <li>
-            <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/blog" activeClassName={sideDrawerStyles.nav__linkActive}>Blog</Link>
+            <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/blog/" activeClassName={sideDrawerStyles.nav__linkActive}>Blog</Link>
           </li>
           <li>
-            <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/buy" activeClassName={sideDrawerStyles.nav__linkActive}>Buy</Link>
+            <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/buy/" activeClassName={sideDrawerStyles.nav__linkActive}>Buy</Link>
           </li>
           <li>
-            <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/contact" activeClassName={sideDrawerStyles.nav__linkActive}>Contact</Link>
+            <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/contact/" activeClassName={sideDrawerStyles.nav__linkActive}>Contact</Link>
           </li>
         </ul>
         <hr className={sideDrawerStyles.hr} />
         <ul className={sideDrawerStyles.nav__list}>
           <li>
-            <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/newsletter" activeClassName={sideDrawerStyles.nav__linkActive}>Newsletter</Link>
+            <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/newsletter/" activeClassName={sideDrawerStyles.nav__linkActive}>Newsletter</Link>
           </li>
           <li>
             <a tabIndex={sideDrawerOpen ? '0' : '-1'} className={sideDrawerStyles.nav__link} href={data.site.siteMetadata.facebook} target="_blank" rel="noopener noreferrer">Facebook</a>
