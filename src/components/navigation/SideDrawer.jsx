@@ -30,9 +30,6 @@ const SideDrawer = ({ sideDrawerOpen, setSideDrawerOpen }) => {
             <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/products/" activeClassName={sideDrawerStyles.nav__linkActive}>Products</Link>
           </li>
           <li>
-            <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/about/" activeClassName={sideDrawerStyles.nav__linkActive}>About</Link>
-          </li>
-          <li>
             <Link tabIndex={sideDrawerOpen ? '0' : '-1'} onClick={() => setSideDrawerOpen(false)} className={sideDrawerStyles.nav__link} to="/buy/" activeClassName={sideDrawerStyles.nav__linkActive}>Buy</Link>
           </li>
           <li>

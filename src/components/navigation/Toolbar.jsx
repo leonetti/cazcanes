@@ -23,9 +23,6 @@ const Toolbar = ({ title, setSideDrawerOpen }) => {
           <Link className={toolbarStyles.nav__link} to="/products/" activeClassName={toolbarStyles.nav__linkActive}>Products</Link>
         </li>
         <li>
-          <Link className={toolbarStyles.nav__link} to="/about/" activeClassName={toolbarStyles.nav__linkActive}>About</Link>
-        </li>
-        <li>
           <a className={toolbarStyles.nav__link} target="_blank" rel="noopener noreferrer" href={data.site.siteMetadata.liquoramaCazcanes}>Buy</a>
         </li>
         <li>
