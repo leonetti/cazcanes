@@ -27,9 +27,11 @@
   background-color: #ffc39e;
 }
 
-.product__info {
+.product__info,
+.award__info {
   margin: 2rem -1rem 0;
-  background-color: #efefef;
+  // background-color: #f9f9f9;
+
   overflow: auto;
   padding: 2rem;
 
@@ -37,22 +39,47 @@
   flex-direction: column;
 }
 
-.notes {
+.award__info {
+  margin-top: 0;
+  border-top: 2px solid #fff;
+}
+
+.notes,
+.awards {
   display: flex;
   justify-content: center;
   align-items: normal;
 }
 
-.notes__item {
+.awards {
+  flex-direction: column;
+}
+
+.notes {
+  padding: 2rem;
+}
+
+.notes__item,
+.awards_item {
   max-width: 200px;
   width: 25%;
   font-family: 'Open Sans', 'sans-serif';
   margin: 0 1rem;
 }
 
-.notes__title {
+.notes__title
+.awards_title {
   font-family: 'Open Sans', 'sans-serif';
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 0.8px;
+}
+
+.notes__title {
+  margin-top: 1rem;
+}
+
+.notes__overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 240, 210, 0.8);
 }

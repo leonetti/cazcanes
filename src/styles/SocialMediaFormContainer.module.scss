@@ -1,6 +1,7 @@
 .wrapper {
   margin: 0 -1rem 100px -1rem;
   display: flex;
+  flex-direction: column-reverse;
 
   @media screen and (max-width: 900px) {
     flex-direction: column-reverse;

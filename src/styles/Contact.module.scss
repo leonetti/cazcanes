@@ -1,11 +1,7 @@
 .container {
-  width: 50%;
+  width: 100%;
   padding: 1rem;
-  background-color: #ffd7be;
-
-  @media screen and (max-width: 900px) {
-    width: 100%;
-  }
+  margin-top: -3rem;
 }
 
 .hidden {
@@ -67,6 +63,7 @@
 .description {
   font-family: 'Open Sans', 'sans-serif';
   line-height: 1.6;
+  text-align: center;
 }
 
 

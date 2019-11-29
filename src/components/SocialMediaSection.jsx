@@ -38,16 +38,19 @@ query {
             url={data.site.siteMetadata.facebook}
             icon={faFacebook}
             name="facebook"
+            target="_blank"
           />
           <SocialMediaLink
             url={data.site.siteMetadata.twitter}
             icon={faTwitter}
             name="twitter"
+            target="_blank"
           />
           <SocialMediaLink
             url={data.site.siteMetadata.instagram}
             icon={faInstagram}
             name="instagram"
+            target="_blank"
           />
         </div>
       </div>

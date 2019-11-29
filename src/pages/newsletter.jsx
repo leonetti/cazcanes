@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import SocialMediaFormContainer from '../components/SocialMediaFormContainer';
-import SocialMediaSection from '../components/SocialMediaSection';
 import contactStyles from '../styles/Contact.module.scss';
 import Heading from '../components/Heading';
 import Head from '../components/Head';
@@ -16,7 +15,6 @@ const Newsletter = () => (
       subtitle="Sign up today"
     />
     <SocialMediaFormContainer>
-      <SocialMediaSection />
       <section className={contactStyles.container}>
         <h3 className={contactStyles.title}>Sign up for the newsletter.</h3>
         <p className={contactStyles.description}>
