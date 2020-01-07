@@ -5,7 +5,7 @@ import BackgroundImage from 'gatsby-background-image';
 import heroContentStyles from '../styles/HeroContent.module.scss';
 
 const HeroContent = ({
-  img, invert, children, fadeLeft, fadeRight, altOverlay,
+  img, invert, children, fadeLeft, fadeRight, altOverlay, noOverlay, top,
 }) => (
   <>
     <div className={classNames({
@@ -14,6 +14,8 @@ const HeroContent = ({
       [heroContentStyles.hero__fadeLeft]: fadeLeft,
       [heroContentStyles.hero__fadeRight]: fadeRight,
       [heroContentStyles.hero__altimageOverlay]: altOverlay,
+      [heroContentStyles.hero__noOverlay]: noOverlay,
+      [heroContentStyles.hero__top]: top,
     })}
     >
       <BackgroundImage
@@ -40,19 +42,24 @@ const HeroContent = ({
 
 HeroContent.propTypes = {
   img: PropTypes.shape({}),
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   invert: PropTypes.bool,
   fadeLeft: PropTypes.bool,
   fadeRight: PropTypes.bool,
   altOverlay: PropTypes.bool,
+  noOverlay: PropTypes.bool,
+  top: PropTypes.bool,
 };
 
 HeroContent.defaultProps = {
   img: null,
+  children: null,
   invert: false,
   fadeLeft: false,
   fadeRight: false,
   altOverlay: false,
+  noOverlay: false,
+  top: false,
 };
 
 export default HeroContent;

@@ -4,7 +4,7 @@
   height: 500px;
   margin-left: -1rem;
   margin-right: -1rem;
-  border-bottom: 3px solid #FFFFFF;
+  // border-bottom: 3px solid #FFFFFF;
 
   @media screen and (max-width: 600px) {
     height: 300px;
@@ -17,15 +17,28 @@
 
 .hero__image-overlay .hero__image-background {
   width: calc(100% + 1rem);
+
+  @media screen and (max-width: 1000px) {
+    height: 400px;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 300px;
+  }
 }
 
 .hero__image-overlay,
 .hero__altimage-overlay {
-  width: calc(100% + 2rem);
+  width: calc(50% + 2rem);
   height: 500px;
   margin-left: -1rem;
   margin-right: -1rem;
   background-color: rgba(255, 255, 255, 0.7);
+
+  @media screen and (max-width: 1000px) {
+    width: calc(100% + 2rem);
+    height: 400px;
+  }
 
   @media screen and (max-width: 600px) {
     height: 300px;
@@ -34,11 +47,26 @@
 }
 
 .hero__altimage-overlay {
+  width: calc(100% + 2rem);
   background-color: rgba(255, 240, 210, 0.7);
+  height: 500px;
 
   @media screen and (max-width: 600px) {
     background-color: transparent;
+    height: 300px;
   }
+}
+
+.hero__altimage-overlay .hero__image-background {
+  height: 500px;
+
+  @media screen and (max-width: 600px) {
+    height: 300px;
+  }
+}
+
+.hero__no-overlay {
+  background-color: transparent;
 }
 
 .hero__fade-left {
@@ -97,6 +125,15 @@
   margin-left: 3rem;
   padding: 1rem 0;
 
+  @media screen and (max-width: 1100px) {
+    font-size: 15px;
+    width: 350px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: calc(100% - 5rem);
+  }
+
   @media screen and (max-width: 600px) {
     width: auto;
     font-size: 14px;
@@ -123,6 +160,10 @@
   text-align: right;
   float: right;
   margin-right: 2rem;
+
+  @media screen and (max-width: 1000px) {
+    text-align: left;
+  }
 }
 
 .hero__inverted .hero__image-text {
@@ -251,6 +292,10 @@
   font-weight: 900;
   opacity: 0.7;
 
+  @media screen and (max-width: 1350px) {
+    font-size: 1.7rem;
+  }
+
   @media screen and (max-width: 600px) {
     width: 100%;
     margin: 0;
@@ -263,6 +308,11 @@
   float: right;
   width: 100%;
   text-align: right;
+
+  @media screen and (max-width: 1000px) {
+    text-align: left;
+    float: none;
+  }
 }
 
 .hero__inverted .title {

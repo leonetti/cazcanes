@@ -2,77 +2,39 @@
   margin-bottom: 6rem;
   display: flex;
   justify-content: space-around;
-  max-width: 100rem;
   margin: 0 auto;
 }
 
-.subtitle {
-  color: #999999;
-  font-weight: 100;
-  margin: 4rem 0 4rem;
-
-  @media screen and (max-width: 600px) {
-    text-align: center;
-  }
-}
-
-.title {
-  font-size: 6rem;
-  text-transform: uppercase;
-  width: 600px;
-  font-weight: 300;
-  margin: 2rem 0 3rem;
-
-  @media screen and (max-width: 1000px) {
-    font-size: 4rem;
-    width: 400px;
-  }
-
-  @media screen and (max-width: 750px) {
-    font-size: 3rem;
-    width: 280px;
-  }
-
-  @media screen and (max-width: 600px) {
-    width: 100%;
-    font-size: 4rem;
-    text-align: center;
-  }
-}
 
 .slogan {
-  color: #999999;
-  font-weight: 100;
+  color: #FFF;
   line-height: 1.5;
-
-  @media screen and (max-width: 1000px) {
-    max-width: 300px;
-  }
-
-  @media screen and (max-width: 750px) {
-    max-width: 250px;
-  }
+  max-width: 300px;
+  margin: -9rem auto 0;
+  text-align: center;
 
   @media screen and (max-width: 600px) {
-    max-width: none;
-    text-align: center;
-    margin-bottom: 5rem;
+    margin-top: -8rem;
   }
 }
 
-.bottles {
-  max-width: 500px;
-  width: 100%;
+.image {
+  width: calc(100% + 2rem);
+  height: 500px;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
 
-  @media screen and (max-width: 1000px) {
-    max-width: 400px;
-  }
 
-  @media screen and (max-width: 750px) {
-    max-width: 280px;
-  }
+.logo {
+  width: 500px;
+  margin: 0 auto;
+  height: auto;
+  min-height: 500px;
+  top: 2rem;
 
   @media screen and (max-width: 600px) {
-    display: none;
+    width: 400px;
+    min-height: 400px;
   }
 }

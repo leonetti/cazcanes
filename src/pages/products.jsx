@@ -45,9 +45,9 @@ const Products = ({ data }) => (
         title="Our Tequilas"
         subtitle="All hand-crafted and made with quality ingredients"
       />
-      <ProductLinkFull img={data.blanco.childImageSharp.fluid} title="Blanco" slug="/blanco" alt="blanco tequila" slogan="Fresh out of the still and into a hand made glass bottle. No aging." />
-      <ProductLinkFull img={data.reposado.childImageSharp.fluid} title="Reposado" slug="/reposado" alt="reposado tequila" slogan="Fresh out of the still and into a hand made glass bottle. No aging." />
-      <ProductLinkFull img={data.anejo.childImageSharp.fluid} title="A&#241;ejo" slug="/anejo" alt="anejo tequila" slogan="Fresh out of the still and into a hand made glass bottle. No aging." />
+      <ProductLinkFull img={data.blanco.childImageSharp.fluid} title="NO.9 Blanco" slug="/blanco" alt="blanco tequila" slogan="Fresh out of the still and into a hand made glass bottle. No aging." />
+      <ProductLinkFull img={data.reposado.childImageSharp.fluid} title="NO.7 Reposado" slug="/reposado" alt="reposado tequila" slogan="Fresh out of the still and into a hand made glass bottle. No aging." />
+      <ProductLinkFull img={data.anejo.childImageSharp.fluid} title="NO.7 A&#241;ejo" slug="/anejo" alt="anejo tequila" slogan="Fresh out of the still and into a hand made glass bottle. No aging." />
     </section>
   </Layout>
 );

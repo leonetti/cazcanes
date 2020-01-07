@@ -29,11 +29,12 @@
 
 .product__info,
 .award__info {
-  margin: 2rem -1rem 0;
+  width: calc(100% + 2rem);
+  margin: 2rem -1rem;
   // background-color: #f9f9f9;
 
   overflow: auto;
-  padding: 2rem;
+  // padding: 2rem;
 
   display: flex;
   flex-direction: column;
