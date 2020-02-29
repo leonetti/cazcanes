@@ -43,12 +43,12 @@ const reposadoNotes = [
   },
   {
     title: 'nose',
-    description: 'Floral, Agave, Grapefruit, Vanilla, &amp; Coconut',
+    description: 'Caramel, Honey, White Pepper, Forest Floor, &amp; Coconut',
     icon: faMugHot,
   },
   {
     title: 'taste',
-    description: 'Clean, Sweet, &amp; Smooth',
+    description: 'Caramel, Honey, Butter, White Pepper, &amp; Touch or Citrus',
     icon: faCocktail,
   },
   {
@@ -67,13 +67,12 @@ const Reposado = ({ data }) => (
       />
       <Heading
         pretitle="Cazcanes"
-        title="No.9 Reposado"
+        title="No.7 Reposado"
       />
       <ProductDisplay
         img={data.reposado.childImageSharp.fluid}
         imgAlt="reposado tequila"
         buyLink={data.reposadoUrl.siteMetadata.liquoramaReposado}
-        slogan="Slogan to go here"
         notes={reposadoNotes}
         notesImage={data.notes.childImageSharp.fluid}
       />

@@ -91,7 +91,6 @@ const Blanco = ({ data }) => (
         img={data.blanco.childImageSharp.fluid}
         imgAlt="blanco tequila"
         buyLink={data.blancoUrl.siteMetadata.liquoramaBlanco}
-        slogan="Fresh out of the still and into a hand-made glass bottle. No aging."
         notes={blancoNotes}
         notesImage={data.notes.childImageSharp.fluid}
         awards={blancoAwards}

@@ -43,7 +43,7 @@ query {
       }
     }
   }
-  anejo: file(relativePath: {eq: "reposado.jpg"}){
+  anejo: file(relativePath: {eq: "anejo.jpg"}){
     id
     childImageSharp {
       fluid(maxWidth: 400) {
